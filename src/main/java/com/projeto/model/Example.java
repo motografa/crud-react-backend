@@ -23,5 +23,4 @@ public class Example {
 	
 	@Column(name="name_example")
 	private String nameExample;
-	
 }

@@ -15,7 +15,6 @@ import com.projeto.repository.ExampleRepository;
 @RestController
 @RequestMapping("/example")
 public class ExampleController {
-	
 
 	private ExampleRepository exampleRepository;
 
