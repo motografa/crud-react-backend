@@ -1,9 +1,9 @@
-package projeto.com.repository;
+package com.projeto.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import projeto.com.model.Example;
+import com.projeto.model.Example;
 
 @Repository
 public interface ExampleRepository extends CrudRepository<Example, Long> {

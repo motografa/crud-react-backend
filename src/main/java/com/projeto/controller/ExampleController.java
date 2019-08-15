@@ -1,4 +1,4 @@
-package projeto.com.controller;
+package com.projeto.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import projeto.com.model.Example;
-import projeto.com.repository.ExampleRepository;
+import com.projeto.model.Example;
+import com.projeto.repository.ExampleRepository;
 
 @Controller
 @RequestMapping("example")

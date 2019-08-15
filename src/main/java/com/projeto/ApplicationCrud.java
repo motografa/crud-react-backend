@@ -1,11 +1,11 @@
-package projeto.com;
+package com.projeto;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories("projeto.com.repository")
+@EnableJpaRepositories("com.projeto.repository")
 public class ApplicationCrud {
 	//https://www.vogella.com/tutorials/EclipseGradle/article.html#creating-web-applications
 
