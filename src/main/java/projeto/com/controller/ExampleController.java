@@ -4,25 +4,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import projeto.com.model.Example;
 import projeto.com.repository.ExampleRepository;
 
-@Controller
-@RequestMapping("example")
+@RestController
+//@RequestMapping("/example")
 public class ExampleController {
 	
 	@Autowired
 	private ExampleRepository exampleRepository;
 	
 	@RequestMapping("/")
-	public String getExampleById(){
-		return "Spring is on";
+	public String getExample(){
+		return "Bem vindo";
 	}
 	
 	@RequestMapping("/find/{id}")
@@ -38,8 +38,6 @@ public class ExampleController {
 		HttpHeaders headers = new HttpHeaders();
 		return new ResponseEntity<Void>(headers, HttpStatus.CREATED); 
 	}
-	
-	
 	
 	//Article savedArticle = articleRepository.save(article); 
 	
